@@ -22,15 +22,26 @@ function changeLanguage() {
     else if(language == 'js')editor.session.setMode("ace/mode/javascript");
 }
 
-async function executeCode() {
-    alert("processing")
-    // if(document.getElementById("exec").disabled==true){
-    //     alert("please wait code is still in execution");
-    //     return;
-    // }
-    // $(".output").text=null;
-    // document.getElementById("exec").disabled = true;
-    //alert(input)
+function btnLoading(elem) {
+    $(elem).attr("data-original-text", $(elem).text()); // <-use .text() instead of .html()
+    $(elem).prop("disabled", true);
+    $(elem).html('<span class="spinner-border spinner-border-sm align-middle" aria-hidden="true" role="status"></span> Running...');
+}
+
+function btnReset(elem) {
+    $(elem).prop("disabled", false);
+    $(elem).text($(elem).attr("data-original-text"));
+}
+
+
+
+async function executeCode(val) {
+
+    btnLoading(val); // disable button and create a Running... button text
+
+    $(".output").text(""); //clearing the console
+
+
     let resp = await fetch('https://codejudge.geeksforgeeks.org/submit-request', {
         method: 'POST',
         headers: {
@@ -59,17 +70,12 @@ async function executeCode() {
     let res = await resp.json();
     //alert(res.submission_id);
 
+    console.log("fetching..");
     let opt = await getResult(res);
 
     let model = await opt.json();
 
-
-
-
     while(model.status=='in-queue'){
-        setTimeout(function(){
-                
-        }, 2000);
         opt = await getResult(res);
         model = await opt.json();
         console.log("fetching..");
@@ -95,6 +101,12 @@ async function executeCode() {
         //alert("insideopt");
         $(".output").text(model.output)
     }
+
+
+    btnReset(val); // restore original button state
+
+
+
     // alert("error code");
     // alert(model.errorCode);
     
@@ -133,6 +145,7 @@ async function executeCode() {
 
 
 async function getResult(res){
+    await waitforme(2000);
     return await fetch('https://codejudge.geeksforgeeks.org/get-status/'+res.submission_id, {
     headers: {
         'Accept': '*/*',
@@ -149,4 +162,10 @@ async function getResult(res){
         'sec-ch-ua-platform': '"Windows"'
     }
 });
+}
+
+function waitforme(millisec) {
+    return new Promise(resolve => {
+        setTimeout(() => { resolve('') }, millisec);
+    })
 }
