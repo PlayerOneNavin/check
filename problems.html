@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+  overflow-x:auto;
+}
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-custom navbar-mainbg navbar-fixed-top">
+    <a class="navbar-brand navbar-logo" href="#">Online-IDE</a>
+    <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i>Welcome</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="problems.html"><i class="fas fa-tachometer-alt"></i>Problems</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ide.html"><i class="far fa-address-book"></i>IDE</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="contest.html"><i class="far fa-clone"></i>Contest</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class="far fa-calendar-alt">About</i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html"><i class="far fa-chart-bar">Profile</i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <table class="table table-striped">
+        <thead class="thead-light">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Problem</th>
+          <th scope="col">Acceptance</th>
+          <th scope="col">Difficulty</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td><a href="eachproblems.html">Merge Two Sorted Lists</a></td>
+          <td>72.7%</td>
+          <td style="color: green;">Easy</td>
+          <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Median of Two Sorted Arrays</td>
+          <td>4.9%</td>
+          <td style="color: red;">Hard</td>
+          <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>3Sum</td>
+          <td>69%</td>
+          <td style="color: #FFC01E;">Medium</td>
+          <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-lg" viewBox="0 0 16 16">
+            <path d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0L7.005 3.1ZM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"/>
+          </svg></td>
+        </tr>
+        <th scope="row">4</th>
+          <td>4Sum</td>
+          <td>69%</td>
+          <td style="color: #FFC01E;">Medium</td>
+          <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-lg" viewBox="0 0 16 16">
+            <path d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0L7.005 3.1ZM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"/>
+          </svg></td>
+        </tr>
+
+        <tr>
+          <th scope="row">5</th>
+          <td>Merge Two Sorted Lists</td>
+          <td>72.7%</td>
+          <td style="color: green;">Easy</td>
+          <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg></td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>Median of Two Sorted Arrays</td>
+          <td>4.9%</td>
+          <td style="color: red;">Hard</td>
+          <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg></td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>3Sum</td>
+          <td>69%</td>
+          <td style="color: #FFC01E;">Medium</td>
+          <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-lg" viewBox="0 0 16 16">
+            <path d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0L7.005 3.1ZM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"/>
+          </svg></td>
+        </tr>
+        <th scope="row">8</th>
+          <td>4Sum</td>
+          <td>69%</td>
+          <td style="color: #FFC01E;">Medium</td>
+          <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-lg" viewBox="0 0 16 16">
+            <path d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0L7.005 3.1ZM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"/>
+          </svg></td>
+        </tr>
+
+        <tr>
+          <th scope="row">9</th>
+          <td>Merge Two Sorted Lists</td>
+          <td>72.7%</td>
+          <td style="color: green;">Easy</td>
+          <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg></td>
+        </tr>
+        <tr>
+          <th scope="row">10</th>
+          <td>Median of Two Sorted Arrays</td>
+          <td>4.9%</td>
+          <td style="color: red;">Hard</td>
+          <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg></td>
+        </tr>
+        <tr>
+          <th scope="row">11</th>
+          <td>3Sum</td>
+          <td>69%</td>
+          <td style="color: #FFC01E;">Medium</td>
+          <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-lg" viewBox="0 0 16 16">
+            <path d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0L7.005 3.1ZM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"/>
+          </svg></td>
+        </tr>
+        <th scope="row">12</th>
+          <td>4Sum</td>
+          <td>69%</td>
+          <td style="color: #FFC01E;">Medium</td>
+          <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-lg" viewBox="0 0 16 16">
+            <path d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0L7.005 3.1ZM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"/>
+          </svg></td>
+        </tr>
+
+        <tr>
+          <th scope="row">13</th>
+          <td>Merge Two Sorted Lists</td>
+          <td>72.7%</td>
+          <td style="color: green;">Easy</td>
+          <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg></td>
+        </tr>
+        <tr>
+          <th scope="row">14</th>
+          <td>Median of Two Sorted Arrays</td>
+          <td>4.9%</td>
+          <td style="color: red;">Hard</td>
+          <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg></td>
+        </tr>
+        <tr>
+          <th scope="row">15</th>
+          <td>3Sum</td>
+          <td>69%</td>
+          <td style="color: #FFC01E;">Medium</td>
+          <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-lg" viewBox="0 0 16 16">
+            <path d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0L7.005 3.1ZM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"/>
+          </svg></td>
+        </tr>
+        <th scope="row">16</th>
+          <td>4Sum</td>
+          <td>69%</td>
+          <td style="color: #FFC01E;">Medium</td>
+          <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-lg" viewBox="0 0 16 16">
+            <path d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0L7.005 3.1ZM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"/>
+          </svg></td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+</html>
