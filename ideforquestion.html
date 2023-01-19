@@ -21,7 +21,7 @@
     </div>
     <div class="editor" id="editor" style="height: 660px;"></div>
     <div class="button-container">
-        <button class="btn" onclick="executeCode()" name="exec" id="exec"> Run </button>
+        <button type="button" onclick="executeCode(this)" class="btn btn-primary btn-lg" id="exe" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Running">Run</button>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/lib/ace.js"></script>
