@@ -143,6 +143,7 @@ async function executeCode(val) {
         // })
     } catch (error) {
         btnReset(val);
+        alert("No Network!");
     }
 }
 
